@@ -17,6 +17,7 @@
 
 - lambda 中如何处理异常？[视频](https://youtu.be/W3OfqnTVkbc) / [代码](src/main/java/javatips/lambda/exception)
 - 从开源框架聊聊责任链模式的应用 [视频](https://youtu.be/O7u6tNLXL_k) / [代码](https://github.com/biezhi/java-tips/blob/master/src/main/java/javatips/javatips/designpattern/cor)
+- 不做 BUG 仔，必须 GET 的 IDEA 调试技巧 [视频](https://youtu.be/b8swwmdNUek) / [代码](src/main/java/javatips/debug)
 
 ## 其他
 
