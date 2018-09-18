@@ -17,7 +17,7 @@ public class Example8 {
         try {
             new Long("xyz");
         } catch (NumberFormatException e) {
-            log.error("", e);
+//            log.error("", e);
             throw e;
         }
     }

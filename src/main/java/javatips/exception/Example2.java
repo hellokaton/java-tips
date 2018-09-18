@@ -13,4 +13,9 @@ public class Example2 {
         System.out.println("哦 " + year);
     }
 
+    public void doThis() throws NumberFormatException {
+        Integer year = Integer.parseInt("biezhi???");
+        System.out.println("哦 " + year);
+    }
+
 }

@@ -17,7 +17,7 @@ public class Example4 {
         try {
             new Long("biezhi大法好");
         } catch (NumberFormatException e) {
-            log.error("", e);
+            log.error("用户ID格式化失败", e);
         }
     }
 

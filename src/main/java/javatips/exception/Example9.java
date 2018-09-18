@@ -23,7 +23,7 @@ public class Example9 {
             long userId = Long.parseLong(id);
             System.out.println("userId: " + userId);
         } catch (NumberFormatException e) {
-            throw new MyBusinessException("描述错误的消息");
+            throw new MyBusinessException("描述错误的消息", e);
         }
     }
 

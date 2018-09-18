@@ -34,4 +34,38 @@ public class Example1 {
         }
     }
 
+    public void closeResourceInFinally() {
+        FileInputStream inputStream = null;
+        try {
+            File file = new File("./王爵的私有宝贝.txt");
+            inputStream = new FileInputStream(file);
+            // 使用 inputStream 读取文件内容
+
+        } catch (FileNotFoundException e) {
+            log.error("", e);
+        } catch (IOException e) {
+            log.error("", e);
+        } finally {
+            if(null != inputStream){
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    log.error("关闭流失败", e);
+                }
+            }
+        }
+    }
+
+    public void autoCloseResource() {
+        File file = new File("./王爵的私有宝贝.txt");
+        try (FileInputStream inputStream = new FileInputStream(file)){
+            // 使用 inputStream 读取文件内容
+
+        } catch (FileNotFoundException e) {
+            log.error("", e);
+        } catch (IOException e) {
+            log.error("", e);
+        }
+    }
+
 }
